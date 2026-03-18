@@ -46,6 +46,9 @@ function registerProduct(event){
     body.appendChild(row);
 }
 
+
+//Assignment 1
+
 // Create pet objects
 let pet1 = {
     name: "Rogue",
@@ -64,7 +67,7 @@ let pet2 = {
 };
 
 let pet3 = {
-    name: "Rocky",
+    name: "Rocko",
     age: 4,
     gender: "Male",
     service: "Gold Package",
