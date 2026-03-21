@@ -19,6 +19,7 @@ function registerProduct(event){
     let breed = productForm.elements["breed"].value;
     let gender = productForm.elements["gender"].value;
     let services = productForm.elements["services"].value;
+    let date = productForm.elements["date"].value;
 
     //  Tets: Console log the values
     console.log(`
@@ -27,6 +28,7 @@ function registerProduct(event){
         Breed ${breed}
         Gender ${gender}
         Services ${services}
+        Date ${date}
     `);
     
     // us the value -> - DB - Email - Browser
@@ -40,9 +42,20 @@ function registerProduct(event){
         <td> ${breed} </td>
         <td> ${gender} </td>
         <td> ${services} </td>
+        <td> ${date} </td>
+        <td> <button class="btn btn-danger delete-btn">Delete</button> <td>
     `;
+      // Delete Button 
+    row.querySelector(".delete-btn").addEventListener("click", function(){
+    let confirmation = confirm("Really?");
+
+    if(confirmation){
+    row.remove();
+    }
+    }); 
     
-    // Add the row to the table body
+
+// Add the row to the table body
     body.appendChild(row);
 }
 
@@ -50,32 +63,32 @@ function registerProduct(event){
 //Assignment 1
 
 // Create pet objects
-let pet1 = {
-    name: "Rogue",
-    age: 1,
-    gender: "Male",
-    service: "Wash & Groom",
-    breed: "German Shepard"
-};
+//let pet1 = {
+   // name: "Rogue",
+    //age: 1,
+    //gender: "Male",
+    //service: "Wash & Groom",
+   // breed: "German Shepard"
+//};
 
-let pet2 = {
-    name: "Ghost",
-    age: 2,
-    gender: "Male",
-    service: "Gold Package",
-    breed: "Central Asian Shepard"
-};
+//let pet2 = {
+  //  name: "Ghost",
+    //age: 2,
+    //gender: "Male",
+    //service: "Gold Package",
+    //breed: "Central Asian Shepard"
+//};
 
-let pet3 = {
-    name: "Rocko",
-    age: 4,
-    gender: "Male",
-    service: "Gold Package",
-    breed: "Kangal"
-};
+//let pet3 = {
+  //  name: "Rocko",
+  //  age: 4,
+  //  gender: "Male",
+  //  service: "Gold Package",
+  //  breed: "Kangal"
+//};
 
 // Create array and add pets
-let petsList = [pet1, pet2, pet3];
+//let petsList = [pet1, pet2, pet3];
 
 // Function to display pet names
 function displayPets() {

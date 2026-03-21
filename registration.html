@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
@@ -31,7 +32,9 @@
             </div>
         </div>
     </nav>
+
     <h1>Registration</h1>
+    <p>We’re excited to care for your pup! Please complete the form below so we can provide the safest, most personalized grooming experience possible. Your dog’s comfort, safety, and happiness are our top priorities.</p>
     <body onload="displayPets()">
 
     <div class="container">
@@ -69,19 +72,24 @@
                 <label class="form-label">Services</label>
                     <select class="form-control" name="services" id="">
                         <option value="">Select a category</option>
-                        <option value="Wash & Groom">Wash & Groom</option>
+                        <option value="Bronze Package">Bronze Package</option>
+                        <option value="Silver Package">Silver Package</option>
                         <option value="Gold Package">Gold Package</option>
                     </select>
             </div>
+
+            <div class="mb-3">
+                <label class="form-label">Appointment Date</label>
+                <input type="date" class="form-control">
+            </div>
             
             <div class="d-flex justify-content-end">
-                <button class="btn btn-primary m-1" type="Rest">Reset</button>
-                <button onclick="registerProduct(event)" class="btn btn-primary m-1" type="submit">Register</button>
+                <button class="btn btn-primary m-1" type="submit">Register</button>
+                <button onclick="registerProduct(event)" class="btn btn-secondary m-1" type="reset">Reset</button>
             </div>
         </form>
-    
-    
     </section>
+
 
     <section classs="m-4">
         <h2>Registered Product</h2>
@@ -94,6 +102,8 @@
                     <th>Breed</th>
                     <th>Gender</th>
                     <th>Services</th>
+                    <th>Date</th>
+                    <th>Delete</th>
                 </tr>
             
 
@@ -104,6 +114,12 @@
         </table>
     
     </section>
+
+        <div class="mountain-dog">
+            <img src="Mountain.png" alt="">
+            <h2>Cancellation Policy</h2>
+            <p>Please inform us at least 24 hours prior to your pups appointment time.</p>
+        </div>
 
     <script src="./scripts/registration.js"></script>
 

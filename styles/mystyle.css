@@ -1,18 +1,24 @@
 .wording{
-    background-color: brown;
+    background-color:tan;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+
 }
+
 img{
     width: 100%;
-
+    padding: 25px;
 }
 
 
 
 .grooming-image{
-    background-color: red;
-    padding: 20px;
-    border-radius: 25px;
-    width: 60%;
-    margin-top: 60px;
-    
+    background-color: tan;
+    padding: 10px;
+
+}
+
+.mountain-dog{
+    background-color: tan;
 }
