@@ -1,8 +1,10 @@
 .wording{
     background-color:tan;
-    display: block;
-    width: 100%;
-    margin-top: 20px;
+    display: flex;
+    width: 30%;
+    border: solid 5px red;
+    flex-direction: column;
+    border-radius: 10px;
 
 }
 
